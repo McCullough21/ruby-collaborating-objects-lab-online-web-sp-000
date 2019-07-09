@@ -15,7 +15,6 @@ def self.find_or_create_by_name(name)
      name = self.new
      @@all << name
    end
-   name
 end
 
 def save
