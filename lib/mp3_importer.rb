@@ -7,7 +7,7 @@ end
 
 def files
   files = []
-   @path.each do |file|
+   Dir[@path].each do |file|
      files << file
    end 
 end
