@@ -14,11 +14,9 @@ def songs
 end
 def self.find_or_create_by_name(name)
    if self.all.include?(name)
-     self.all.detect {|name| name == name}
+     self.all.detect {|name| artist.name == name}
    else
      self.new(name)
-     save
-     self
    end
 end
 
