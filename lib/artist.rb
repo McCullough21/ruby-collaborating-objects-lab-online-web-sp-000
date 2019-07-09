@@ -14,7 +14,7 @@ def songs
 end
 def self.find_or_create_by_name(name)
    if !@@all.include?(name)
-     self.new 
+     self.new(name) 
    else
      name
    end
