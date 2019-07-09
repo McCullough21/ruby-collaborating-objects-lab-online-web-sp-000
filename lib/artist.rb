@@ -8,7 +8,7 @@ def initialize(name)
 end
 def add_song(song)
   song = Song.new(song)
-  Self.name = self
+  self.name = self
   @songs << song if !@songs.include?(song)
 end
 def songs
