@@ -9,7 +9,8 @@ end
 def files
    Dir[@path].each do |file|
      @files << file
-   end 
+   end
+   @files
 end
 
 
