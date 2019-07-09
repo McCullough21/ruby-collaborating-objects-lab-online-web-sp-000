@@ -1,15 +1,15 @@
 class MP3Importer
-attr_accessor :Files
+attr_accessor :path
 
 def initialize(path)
-   path = Dir[".mp3s"]
+   @path = path
 end
 
 def files
-  # split_at = ["-", "."]
-  #  @files.each do |file|
-  #    file.split(Regexp.union(split_at))
-  #    artist = file[0]
+  files = []
+   @path.each do |file|
+     files << file
+   end 
 end
 
 
