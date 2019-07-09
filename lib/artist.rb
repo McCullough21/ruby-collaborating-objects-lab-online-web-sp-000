@@ -17,7 +17,7 @@ def self.find_or_create_by_name(name)
      self.all.detect {|name| name == name}
    else
      self.new(name)
-     self.save
+     save
      self
    end
 end
