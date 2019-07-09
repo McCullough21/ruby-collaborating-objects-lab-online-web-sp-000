@@ -26,5 +26,10 @@ end
 def self.all
   @@all
 end
+def print_songs
+  self.songs.each do |song|
+    song.name
+end
+end
 
 end
