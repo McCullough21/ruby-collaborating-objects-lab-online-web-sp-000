@@ -1,5 +1,5 @@
 class Artist
-attr_accessor :name
+attr_accessor :name, :songs
 @@all = []
 
 def initialize(name)
@@ -14,7 +14,7 @@ def songs
 end
 def self.find_or_create_by_name(name)
    if @@all.include?(name)
-     @@all.find(name)
+     @@all.detect {|name| Artist.name == name}
    else
      self.new(name)
    end
