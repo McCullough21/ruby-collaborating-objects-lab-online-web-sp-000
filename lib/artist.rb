@@ -15,8 +15,8 @@ end
 def self.find_or_create_by_name(name)
      if self.all.detect {|artist| artist.name == name}
        name
-     else 
-     self.new(name) 
+     else
+     self.new(name)
      end
 end
 
