@@ -6,7 +6,7 @@ def initialize(name)
 end
 def self.new_by_filename(song_file)
   file = song_file.chomp(".mp3").split(" - ")
-  song = Song.new(file[1])
+  song.name = Song.new(file[1])
   song.artist = file[0]
 end
 
