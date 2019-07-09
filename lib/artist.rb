@@ -15,6 +15,7 @@ def self.find_or_create_by_name(name)
      @@all << name
    else
      name = self.new
+     @@all << name
    end
 end
 
