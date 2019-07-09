@@ -11,9 +11,13 @@ def artist_name=(name)
 end
 
 def self.new_by_filename(song_file)
-  file = song_file.chomp(".mp3").split(" - ")
-  song = Song.new(file[1])
-  song.artist_name = file[0]
+  # file = song_file.chomp(".mp3").split(" - ")
+  # song = Song.new(file[1])
+  # song.artist_name = file[0]
+  name = song_file.split(" - ")[1]
+  artist = song_file.split(" - ")[0]
+  song = Song.new(name)
+  song.artist_name = artist
   song
 end
 
