@@ -12,11 +12,10 @@ end
 
 def self.find_or_create_by_name(name)
    if !@@all.include?(name)
-     @@all << name
-   else
      name = self.new
      @@all << name
    end
+   name
 end
 
 def save
