@@ -8,7 +8,7 @@ end
 def files
   @files = []
    Dir.new(@path).each do |file|
-     @files << file
+     @files << file if file.length > 4
    end
    @files
 end
