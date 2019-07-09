@@ -5,7 +5,7 @@ attr_accessor :name, :songs
 def initialize(name)
   @name = name
   @songs = []
-  Self.save
+  self.save
 end
 def add_song(song)
   @songs << song if !@songs.include?(song)
