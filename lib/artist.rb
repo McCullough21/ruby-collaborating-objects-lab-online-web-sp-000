@@ -19,14 +19,14 @@ end
 #       self.create(name)
 #     end
 #   end
-# 
-# 
+#
+#
 #   def self.find(name)
 #     @@all.find do |artist|
 #       artist.name == name
 #     end
 #   end
-# 
+#
 #   def self.create(name)
 #     artist = self.new(name)
 #     @@all << artist
@@ -38,7 +38,7 @@ def self.find_or_create_by_name(name)
      else
      @@all << self.new(name)
      name
-     
+
      end
 end
 
