@@ -11,7 +11,12 @@ end
 #   song.artist =
 
 def self.find_or_create_by_name(name)
-  @@all << name if !@@all.include?(name)
+   if !@@all.include?(name)
+     @@all << name 
+   else
+     Self.new = name
+     @@all << name
+   end  
 end
 
 def save
