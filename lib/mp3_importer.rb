@@ -1,8 +1,8 @@
 class MP3Importer
 attr_accessor :Files
 
-def initialize(files)
- @files = Dir[".mp3s"]
+def initialize(path)
+   path = Dir[".mp3s"]
 end
 
 def files
