@@ -36,8 +36,9 @@ def self.find_or_create_by_name(name)
      if self.all.detect {|artist| artist.name == name}
        name
      else
-     @@all << self.new(name)
-     name
+     artist = self.new(name)
+     @@all << artist
+     artist
 
      end
 end
